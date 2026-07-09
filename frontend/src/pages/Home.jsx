@@ -145,7 +145,7 @@ export default function Home() {
         </p>
         {apiDown && (
           <p className="mt-4 text-sm text-danger bg-danger/10 border border-danger/30 rounded-lg px-3 py-2 inline-block">
-            Backend not reachable — start the Flask API on port 5000 to see live metrics.
+            Connection error — could not reach the backend API. Make sure the Flask server is running.
           </p>
         )}
       </div>

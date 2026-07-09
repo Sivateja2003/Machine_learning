@@ -366,6 +366,7 @@ def health():
     return jsonify({"status": "ok", "models_loaded": list(REGISTRY.keys())})
 
 
+train_all_models()
+
 if __name__ == "__main__":
-    train_all_models()
     app.run(host="0.0.0.0", port=5000, debug=True)
